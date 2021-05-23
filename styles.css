@@ -1,0 +1,179 @@
+:root{
+    --primary-color:hsl(0, 100%, 74%);
+    --secondary-color:hsl(154, 59%, 51%);
+    --accent:hsl(248, 32%, 49%);
+    --darkblue: hsl(249, 10%, 26%);
+    --grayblue: hsl(246, 25%, 77%);
+}
+
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+}
+
+#container{
+    max-width: 1440px;
+    background-image: url(./images/bg-intro-mobile.png);
+    display: flex;
+    height:100vh;
+    padding:10%;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    padding-right: 60px;
+}
+
+.header-content{
+    align-items: center;
+    justify-content: center;
+    color:#ffff;
+    align-content: ;
+}
+
+.header-content h1{
+    font-size:3em;
+}
+
+.header-content p{
+    padding-top: 20px;
+    line-height: 1.5em;
+}
+
+.main-content{
+    flex:1;
+}
+
+.form-container{
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    align-self: center;
+    padding: 20px;
+}
+
+form{
+    width:100% ;
+    padding:20px;
+    background-color:#ffff;
+    display:flex;
+    flex-direction:column;
+    border-radius: 10px;
+}
+
+form input {
+    width: 100%;
+    margin: 1em auto 0.1em auto;
+    padding: 1em;
+    border: 1px solid var(--grayblue);
+    border-radius: 5px;
+  }
+
+form input:focus{
+    outline: none;
+    box-shadow: 0 0 0 1pt var(--grayblue);
+  }
+  form input::placeholder{
+      color: var(--grayblue);
+      font-weight: 600;
+  }
+.form-item{
+    position: relative;
+    text-align:right;
+    color: var(--primary-color);
+}
+.form-item--action{
+    position: relative;
+    text-align: center;
+}
+
+.form-item img{
+    position: absolute;
+    right: 1em;
+    top: 1.6em;
+    opacity: 0;
+}
+
+.form-item--action button{
+    margin: 1em auto;
+    width: 100%;
+    padding: 0.8em 1em;
+    font-size: 1.1rem;
+    color: #f2f2f2;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px 0px hsl(154, 54%, 41%);
+}
+.form-item--action button:focus{
+    outline:none;
+}
+.form-item--action button:hover{
+    cursor:pointer;
+}
+#terms{
+    color:#828282;
+}
+
+#terms a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+#terms a:focus{
+    outline:none;
+}
+
+.price-banner button{
+    width: 100%;
+    padding: 1em 2em;
+    color: #f2f2f2;
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: 1em 0;
+    box-shadow: 0 8px 5px -1px hsla(240, 1%, 23%, 0.411);
+}
+.price-banner button:focus{
+    outline:none;
+}
+
+.price-banner button:hover{
+    cursor: pointer;
+}
+
+.price-banner button span{
+    font-weight: 700;
+}
+
+@media only screen and (max-width:660px){
+    #container{
+        display: block;
+        padding: 40px 40px;
+    }
+    header{
+        padding: 0px;
+        justify-content: center;
+    }
+    .header-content{
+        text-align: center;
+    }
+    .header-content h1{
+        font-size:2em;
+    }
+    .form-container{
+        padding: 40px 0px;
+    }
+}

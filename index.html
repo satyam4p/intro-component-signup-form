@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div class="header-content">
+        <h1>Learn to code by watching others</h1>
+        <p class="description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+      </div>
+    </header>
+    <div class="form-container">
+      <div class="price-banner">
+        <button><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+      </div>
+      <form onsubmit="handleSubmit()">
+        <div class="form-item">
+          <input type="text" name="firstName" onChange="handleFirstName()" placeholder="First Name">
+          <img src="./images/icon-error.svg" alt="">
+          <small></small>
+        </div>
+        <div class="form-item">
+          <input type="text" name="lastName" onChange="handleLastName()" placeholder="Last Name">
+          <img src="./images/icon-error.svg" alt="">
+          <small></small>
+        </div>
+        <div class="form-item">
+          <input type="text" name="email" onChange="handleEmailChange()" placeholder="Email Address">
+          <img src="./images/icon-error.svg" alt="">
+          <small></small>
+        </div>
+        <div class="form-item">
+          <input type="text" name="password" onChange="handlePassword()" placeholder="Password">
+          <img src="./images/icon-error.svg" alt="">
+          <small></small>
+        </div>
+        <div class="form-item--action">
+            <button type="submit">CLAIM YOUR FREE TRIAL</button>
+            <small id="terms">By clicking the button, you are agreeing to our <a href="">Terms and Services</a></small>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
