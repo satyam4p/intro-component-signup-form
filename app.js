@@ -38,8 +38,6 @@ function handlePassword(){
     const pass = event.target.value;
     if(pass ===""){
         raiseWarning(event.target,"Password cannot be empyty");
-    }else if(pass.length < 6){
-        raiseWarning(event.target,"Password too small");
     }else{
         callSuccess(event.target);
     }
