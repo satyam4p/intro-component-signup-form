@@ -78,6 +78,9 @@ form input {
     padding: 1em;
     border: 1px solid var(--grayblue);
     border-radius: 5px;
+    font-family:"Poppins", sans-serif;
+    font-weight:700;
+    color:#333;
   }
 
 form input:focus{
